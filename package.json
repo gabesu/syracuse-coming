@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "gsap": "^2.1.2",
+    "parcel-bundler": "^1.12.0",
+    "scrollmagic": "^2.0.6",
+    "typesplit": "^1.0.0"
+  },
+  "scripts": {
+    "dev": "parcel index.html | sass --watch sass/main.scss:main.css",
+    "build": "parcel build index.html"
+  }
+}

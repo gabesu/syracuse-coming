@@ -135,15 +135,15 @@ table {
 
 @font-face {
   font-family: Hurme;
-  src: url(../Hurme.87411e17.otf);
+  src: url("../Hurme.87411e17.otf");
 }
 @font-face {
   font-family: HurmeBold;
-  src: url(../Hurme-SemiBold.e363d4f1.otf);
+  src: url("../Hurme-SemiBold.e363d4f1.otf");
 }
 @font-face {
   font-family: HurmeLight;
-  src: url(../Hurme-Light.19fdd064.otf);
+  src: url("../Hurme-Light.19fdd064.otf");
 }
 * {
   box-sizing: border-box;

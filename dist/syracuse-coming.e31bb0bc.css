@@ -135,15 +135,15 @@ table {
 
 @font-face {
   font-family: Hurme;
-  src: url(./../fonts/Hurme.otf);
+  src: url(../Hurme.87411e17.otf);
 }
 @font-face {
   font-family: HurmeBold;
-  src: url(./../fonts/Hurme-SemiBold.otf);
+  src: url(../Hurme-SemiBold.e363d4f1.otf);
 }
 @font-face {
   font-family: HurmeLight;
-  src: url(./../fonts/Hurme-Light.otf);
+  src: url(../Hurme-Light.19fdd064.otf);
 }
 * {
   box-sizing: border-box;
@@ -260,7 +260,7 @@ nav .nav-menu .close-icon {
 .content {
   width: 100%;
   padding: 100px;
-  background: url(./../images/grunge-bg@2x.png);
+  background: url(../grunge-bg@2x.def8240c.png);
   display: grid;
   grid-template-columns: 20% repeat(8, 10%);
   position: relative;
@@ -441,4 +441,4 @@ p {
   opacity: 1;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=/syracuse-coming.e31bb0bc.css.map */

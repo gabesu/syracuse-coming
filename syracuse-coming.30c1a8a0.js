@@ -39,4 +39,4 @@ var t;!function(e,n){"function"==typeof t&&t.amd?t(n):"undefined"!=typeof export
 },{"gsap":"f8Z0"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/reveal"),require("./js/menu"),require("./js/flowers");
 },{"./sass/main.scss":"clu1","./js/reveal":"zd5f","./js/menu":"i+0C","./js/flowers":"82Np"}]},{},["Focm"], null)
-//# sourceMappingURL=syracuse-coming.30c1a8a0.js.map
+//# sourceMappingURL=https://gabesu.github.io/syracuse-coming/syracuse-coming.30c1a8a0.js.map

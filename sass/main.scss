@@ -6,17 +6,17 @@ $grey: #f1f5f8;
 
 @font-face {
 	font-family: Hurme;
-	src: url(./../fonts/Hurme.otf);
+	src: url("../fonts/Hurme.otf");
 }
 
 @font-face {
 	font-family: HurmeBold;
-	src: url(./../fonts/Hurme-SemiBold.otf);
+	src: url("../fonts/Hurme-SemiBold.otf");
 }
 
 @font-face {
 	font-family: HurmeLight;
-	src: url(./../fonts/Hurme-Light.otf);
+	src: url("../fonts/Hurme-Light.otf");
 }
 
 * {
@@ -65,7 +65,7 @@ nav {
 	padding: 40px 100px;
 
 	@include mobile {
-		padding: 0;
+		padding: 20px;
 	}
 
 	.nav-btn {
@@ -135,7 +135,7 @@ nav {
 .content {
 	width: 100%;
 	padding: 100px;
-	background: url(./../images/grunge-bg@2x.png);
+	background: url("../images/grunge-bg@2x.png");
 	display: grid;
 	grid-template-columns: 20% repeat(8, 10%);
 	position: relative;
@@ -167,7 +167,11 @@ nav {
 			width: 100%;
 		}
 	}
-
+	.dots-ill-grey {
+		@include mobile {
+			display: none;
+		}
+	}
 	.dots-ill-orange {
 		grid-row: 1;
 		grid-column: 8;
@@ -262,6 +266,10 @@ h1 {
 		bottom: -10px;
 		left: -20px;
 		z-index: -1;
+		@include mobile {
+			width: 50%;
+			left: 0;
+		}
 	}
 }
 

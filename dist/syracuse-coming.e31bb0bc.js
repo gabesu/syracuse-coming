@@ -12001,8 +12001,8 @@ mainTl.from(counter, 1, {
   opacity: 0,
   ease: Back.easeOut.config(1.2)
 }, 0.5).to(content, 1, {
-  clipPath: "inset(0px 50px 50px 50px)",
-  webkitClipPath: "inset(0px 50px 50px 50px)",
+  clipPath: "inset(0px 20px 20px 20px)",
+  webkitClipPath: "inset(0px 20px 20px 20px)",
   ease: Back.easeOut.config(1.7)
 }).from(logo, 0.5, {
   y: -20,
@@ -12086,7 +12086,7 @@ menuIcon.addEventListener("click", function () {
     menuTl.reverse();
   }
 });
-},{"gsap":"node_modules/gsap/index.js"}],"js/flowers.js":[function(require,module,exports) {
+},{"gsap":"node_modules/gsap/index.js"}],"js/illustration.js":[function(require,module,exports) {
 "use strict";
 
 var _gsap = require("gsap");
@@ -12193,8 +12193,8 @@ require("./js/reveal");
 
 require("./js/menu");
 
-require("./js/flowers");
-},{"./sass/main.scss":"sass/main.scss","./js/reveal":"js/reveal.js","./js/menu":"js/menu.js","./js/flowers":"js/flowers.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+require("./js/illustration");
+},{"./sass/main.scss":"sass/main.scss","./js/reveal":"js/reveal.js","./js/menu":"js/menu.js","./js/illustration":"js/illustration.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12222,7 +12222,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53354" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57154" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -6,17 +6,17 @@ $grey: #f1f5f8;
 
 @font-face {
 	font-family: "Hurme";
-	src: url("../fonts/Hurme.otf");
+	src: url(./../fonts/Hurme.otf);
 }
 
 @font-face {
 	font-family: "HurmeBold";
-	src: url("../fonts/Hurme-SemiBold.otf");
+	src: url(./../fonts/Hurme-SemiBold.otf);
 }
 
 @font-face {
 	font-family: "HurmeLight";
-	src: url("../fonts/Hurme-Light.otf");
+	src: url(./../fonts/Hurme-Light.otf);
 }
 
 * {
@@ -135,7 +135,7 @@ nav {
 .content {
 	width: 100%;
 	padding: 100px;
-	background: url("../images/grunge-bg@2x.png");
+	background: url("./../images/grunge-bg@2x.png");
 	display: grid;
 	grid-template-columns: 20% repeat(8, 10%);
 	position: relative;

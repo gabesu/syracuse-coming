@@ -134,15 +134,15 @@ table {
 }
 
 @font-face {
-  font-family: Hurme;
+  font-family: "Hurme";
   src: url("../fonts/Hurme.otf");
 }
 @font-face {
-  font-family: HurmeBold;
+  font-family: "HurmeBold";
   src: url("../fonts/Hurme-SemiBold.otf");
 }
 @font-face {
-  font-family: HurmeLight;
+  font-family: "HurmeLight";
   src: url("../fonts/Hurme-Light.otf");
 }
 * {
@@ -151,7 +151,7 @@ table {
 
 html,
 body {
-  font-family: HurmeLight, sans-serif;
+  font-family: "HurmeLight", sans-serif;
   background: white;
   color: white;
   height: 100vh;
@@ -370,7 +370,7 @@ nav .nav-menu .close-icon {
 }
 
 h1 {
-  font-family: HurmeBold, sans-serif;
+  font-family: "HurmeBold", sans-serif;
   color: #242424;
   font-size: 60px;
   letter-spacing: -3px;

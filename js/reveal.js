@@ -14,7 +14,6 @@ let underline = CSSRulePlugin.getRule("h1:after");
 const greyDots = document.querySelectorAll(".grey-dots g");
 const orangeDots = document.querySelectorAll(".orange-dots g");
 
-console.log(underline);
 // Split h2 into words using Typesplit
 let headerText = new SplitType(header, {
 	split: "words"

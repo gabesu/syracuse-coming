@@ -1,11 +1,11 @@
 parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"hxii":[function(require,module,exports) {
-module.exports="../grunge-bg@2x.3cbcdeb8.png";
+module.exports="/syracuse-coming/../grunge-bg@2x.3cbcdeb8.png";
 },{}],"nANb":[function(require,module,exports) {
-module.exports="../Hurme.99bde7f6.otf";
+module.exports="/syracuse-coming/../Hurme.99bde7f6.otf";
 },{}],"6lTE":[function(require,module,exports) {
-module.exports="../Hurme-Light.a943a6cd.otf";
+module.exports="/syracuse-coming/../Hurme-Light.a943a6cd.otf";
 },{}],"83+l":[function(require,module,exports) {
-module.exports="../Hurme-SemiBold.9c88ce80.otf";
+module.exports="/syracuse-coming/../Hurme-SemiBold.9c88ce80.otf";
 },{}],"clu1":[function(require,module,exports) {
 
 },{"./../fonts/Hurme.otf":[["Hurme.99bde7f6.otf","nANb"],"nANb"],"./../fonts/Hurme-SemiBold.otf":[["Hurme-SemiBold.9c88ce80.otf","83+l"],"83+l"],"./../fonts/Hurme-Light.otf":[["Hurme-Light.a943a6cd.otf","6lTE"],"6lTE"],"./../images/grunge-bg@2x.png":[["grunge-bg@2x.3cbcdeb8.png","hxii"],"hxii"]}],"sU2v":[function(require,module,exports) {
@@ -47,4 +47,4 @@ var t;!function(e,n){"function"==typeof t&&t.amd?t(n):"undefined"!=typeof export
 },{"gsap":"f8Z0"}],"Focm":[function(require,module,exports) {
 "use strict";require("./images/grunge-bg@2x.png"),require("./fonts/Hurme.otf"),require("./fonts/Hurme-Light.otf"),require("./fonts/Hurme-SemiBold.otf"),require("./sass/main.scss"),require("./js/reveal"),require("./js/menu"),require("./js/illustration");
 },{"./images/grunge-bg@2x.png":"hxii","./fonts/Hurme.otf":"nANb","./fonts/Hurme-Light.otf":"6lTE","./fonts/Hurme-SemiBold.otf":"83+l","./sass/main.scss":"clu1","./js/reveal":"zd5f","./js/menu":"i+0C","./js/illustration":"TjIc"}]},{},["Focm"], null)
-//# sourceMappingURL=syracuse-coming.5b6159e8.js.map
+//# sourceMappingURL=/syracuse-coming/syracuse-coming.5b6159e8.js.map

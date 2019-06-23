@@ -135,15 +135,15 @@ table {
 
 @font-face {
   font-family: "Hurme";
-  src: url(./../fonts/Hurme.otf);
+  src: url("./../fonts/Hurme.otf");
 }
 @font-face {
   font-family: "HurmeBold";
-  src: url(./../fonts/Hurme-SemiBold.otf);
+  src: url("./../fonts/Hurme-SemiBold.otf");
 }
 @font-face {
   font-family: "HurmeLight";
-  src: url(./../fonts/Hurme-Light.otf);
+  src: url("./../fonts/Hurme-Light.otf");
 }
 * {
   box-sizing: border-box;

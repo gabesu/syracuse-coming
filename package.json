@@ -8,7 +8,7 @@
 	},
 	"scripts": {
 		"dev": "parcel index.html | sass --watch sass/main.scss:main.css",
-		"build": "parcel build index.html --public-url ./ -d dist",
+		"build": "parcel build index.html --public-url ./syracuse-coming/ -d dist",
 		"predeploy": "yarn run build",
 		"deploy": "gh-pages -d dist"
 	},

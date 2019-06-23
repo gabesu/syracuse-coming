@@ -72,8 +72,8 @@ mainTl
 		0.5
 	)
 	.to(content, 1, {
-		clipPath: "inset(0px 20px 20px 20px)",
-		webkitClipPath: "inset(0px 20px 20px 20px)",
+		clipPath: "inset(0px 2% 0px 2%)",
+		webkitClipPath: "inset(0px 2% 0px 2%)",
 		ease: Back.easeOut.config(1.7)
 	})
 	.from(logo, 0.5, { y: -20, autoAlpha: 0, ease: Power4.easeOut })

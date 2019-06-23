@@ -40,44 +40,45 @@ flowersTl.play();
 
 let flowerContent = document.querySelector(".flower-content");
 flowers.forEach(flower => {
-	flower.addEventListener("mouseover", e => {
-		// console.log(e.clientX, e.clientY);
-        let content = flower.getAttribute("data-content");
-        let flowerHeight = flower.getBoundingClientRect().height * 2;
-        let flowerX = flower.getBoundingClientRect().x;
-        let flowerY = flower.getBoundingClientRect().y;
-        console.log(flowerHeight);
-        flowerContent.innerHTML = content;
+	if (window.innerWidth > 900) {
+		flower.addEventListener("mouseover", e => {
+			// console.log(e.clientX, e.clientY);
+			let content = flower.getAttribute("data-content");
+			let flowerHeight = flower.getBoundingClientRect().height * 2;
+			let flowerX = flower.getBoundingClientRect().x;
+			let flowerY = flower.getBoundingClientRect().y;
+			console.log(flowerHeight);
+			flowerContent.innerHTML = content;
 
-        setTimeout(function(){
-            flowerContent.classList.add("show");
-        }, 300)
+			setTimeout(function() {
+				flowerContent.classList.add("show");
+			}, 300);
 
-		flowersTl.pause();
-		TweenMax.to(flower, 0.2, {
-			scale: 1.5,
-			rotation: 360,
-			ease: Back.easeOut.config(1.7)
+			flowersTl.pause();
+			TweenMax.to(flower, 0.2, {
+				scale: 1.5,
+				rotation: 360,
+				ease: Back.easeOut.config(1.7)
+			});
+			flowerContent.style.top = flowerY - 50 + "px";
+			flowerContent.style.left = flowerX - 300 + "px";
+			// if(e.clientX > 800 ){
+			//     flowerContent.style.left = flowerX - 300 + "px";
+			// } else {
+			//     flowerContent.style.left = flowerX + "px";
+			// }
 		});
-        flowerContent.style.top = flowerY -50 + "px";
-        flowerContent.style.left = flowerX - 300 + "px";
-        // if(e.clientX > 800 ){
-        //     flowerContent.style.left = flowerX - 300 + "px";
-        // } else {
-        //     flowerContent.style.left = flowerX + "px";
-        // }
-
-	});
-	flower.addEventListener("mouseout", () => {
-		// console.log(flower);
-		flowerContent.classList.remove("show");
-		TweenMax.to(flower, 0.2, {
-			scale: 1,
-			rotation: 0,
-			onComplete: () => {
-				flowersTl.kill();
-				flowersTl.play();
-			}
+		flower.addEventListener("mouseout", () => {
+			// console.log(flower);
+			flowerContent.classList.remove("show");
+			TweenMax.to(flower, 0.2, {
+				scale: 1,
+				rotation: 0,
+				onComplete: () => {
+					flowersTl.kill();
+					flowersTl.play();
+				}
+			});
 		});
-	});
+	}
 });

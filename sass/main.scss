@@ -52,7 +52,6 @@ body {
 .container {
 	width: 100%;
 	margin: auto;
-	display: flex;
 	flex-direction: column;
 }
 .counter {
@@ -62,7 +61,12 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	padding: 40px 100px;
+	height: 100px;
+	padding: 0 100px;
+
+	.logo {
+		align-self: center;
+	}
 
 	@include mobile {
 		padding: 20px;
@@ -103,6 +107,11 @@ nav {
 		padding-bottom: 80px;
 		display: inline-block;
 		z-index: 100;
+		@include mobile {
+			width: 100vw;
+			right: 0;
+			height: 100vh;
+		}
 
 		h3 {
 			color: #fffdce;
@@ -139,6 +148,10 @@ nav {
 	display: grid;
 	grid-template-columns: 20% repeat(8, 10%);
 	position: relative;
+	height: calc(100vh - 100px);
+	@include mobile {
+		height: auto;
+	}
 
 	@include mobile {
 		display: flex;
@@ -149,6 +162,12 @@ nav {
 	.caption {
 		grid-row: 1/1;
 		grid-column: 1/4;
+		@include mobile {
+			p {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
 	}
 
 	.content-image {
@@ -157,10 +176,11 @@ nav {
 		display: relative;
 
 		@include mobile {
-			width: 150%;
-			margin-left: calc(-50vw / 2);
+			width: 100%;
+			// margin-left: calc(-50vw / 2);
 			grid-row: none;
 			grid-column: none;
+			z-index: 1000;
 		}
 
 		.illustration {
@@ -206,7 +226,7 @@ nav {
 
 			@include mobile {
 				height: 4px;
-				width: 150px;
+				width: 100px;
 				align-self: center;
 			}
 		}
@@ -255,6 +275,9 @@ h1 {
 	display: inline-block;
 	position: relative;
 	z-index: 10000;
+	@include mobile {
+		font-size: 42px;
+	}
 
 	&:after {
 		content: "";
@@ -279,8 +302,10 @@ p {
 }
 
 .counter {
+	position: relative;
 	display: flex;
 	height: 20px;
+	margin: auto;
 	overflow: hidden;
 
 	.fig {

@@ -24,7 +24,7 @@ let captionText = new SplitType(caption, {
 });
 
 // Create menu timeline instance
-let mainTl = new TimelineMax();
+let mainTl = new TimelineMax({ paused: true });
 
 mainTl
 	.from(
@@ -71,11 +71,6 @@ mainTl
 		{ y: "20px", opacity: 0, ease: Back.easeOut.config(1.2) },
 		0.5
 	)
-	.to(content, 1, {
-		clipPath: "inset(0px 2% 0px 2%)",
-		webkitClipPath: "inset(0px 2% 0px 2%)",
-		ease: Back.easeOut.config(1.7)
-	})
 	.from(logo, 0.5, { y: -20, autoAlpha: 0, ease: Power4.easeOut })
 	.from(navBtn, 0.5, { autoAlpha: 0, ease: Power4.easeOut })
 	.staggerFrom(
@@ -91,3 +86,62 @@ mainTl
 		0.01,
 		"-=5"
 	);
+
+// mobile animation
+
+// let mobileTl = new TimelineMax({ paused: true });
+
+// mobileTl
+// 	.from(
+// 		counter,
+// 		1,
+// 		{ y: "10px", opacity: 0, ease: Back.easeOut.config(1.2) },
+// 		"+=1"
+// 	)
+// 	.to(countdown, 1, { y: "-24px", ease: Back.easeOut.config(1.2) }, "+=0.3")
+// 	.to(countdown, 1, { y: "-48px", ease: Back.easeOut.config(1.2) }, "+=0.3")
+// 	.to(countdown, 1, { y: "-72px", ease: Back.easeOut.config(1.2) }, "+=0.3")
+// 	.to(counter, 1, {
+// 		y: "-10px",
+// 		opacity: 0,
+// 		ease: Back.easeOut.config(1.2),
+// 		delay: 0.5
+// 	})
+// 	.set(counter, {
+// 		display: "none"
+// 	})
+// 	.fromTo(
+// 		content,
+// 		2,
+// 		{
+// 			clipPath: "inset(0% 100% 0% 0%)",
+// 			webkitClipPath: "inset(0% 100% 0% 0%)"
+// 		},
+// 		{
+// 			clipPath: "inset(0% 0% 0% 0%)",
+// 			webkitClipPath: "inset(0% 0% 0% 0%)",
+// 			ease: Power4.easeOut
+// 		}
+// 	)
+// 	.staggerFrom(
+// 		headerText.words,
+// 		0.5,
+// 		{ y: "20px", opacity: 0, ease: Back.easeOut.config(1.2) },
+// 		0.1
+// 	)
+// 	.from(underline, 0.3, { cssRule: { width: "0" } })
+// 	.from(".swipe-container", 1, {
+// 		y: "20px",
+// 		opacity: 0,
+// 		ease: Back.easeOut.config(1.2)
+// 	})
+// 	.from(logo, 0.5, { y: -20, autoAlpha: 0, ease: Power4.easeOut })
+// 	.from(navBtn, 0.5, { autoAlpha: 0, ease: Power4.easeOut });
+
+// if (window.innerWidth < 600) {
+// 	mobileTl.play();
+// } else {
+// 	mainTl.play();
+// }
+
+mainTl.play();

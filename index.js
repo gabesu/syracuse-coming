@@ -7,4 +7,5 @@ import "./fonts/Hurme-SemiBold.otf";
 import "./sass/main.scss";
 import "./js/reveal";
 import "./js/menu";
+import "./js/swipe";
 import "./js/illustration";
